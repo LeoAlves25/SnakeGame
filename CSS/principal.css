@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'FonteSnake';
+    src: url('../fonts/SnakeChan-YdV8.ttf');
+}
+
+@font-face {
+    font-family: 'FontePixel';
+    src: url('../fonts/8-bit-pusab.ttf');
+}
+
+/*Geral*/
+*{
+    text-align: center;
+}
+
+body{
+    background-color: grey;
+    overflow: hidden;
+}
+
+
+body{
+    font-family: 'FontePixel';
+}
+
+body h2{
+    font-size: 15px;
+    color: white;
+}
+
+body div input,label{
+    font-size: 12px;
+    cursor: pointer;
+    color: white;
+}
+
+/*Conteúdo*/
+#titulo{
+    font-family: 'FonteSnake';
+    font-size: 30pt;
+    margin-top: -5px;
+    margin-bottom: 4px;
+    text-shadow: 
+               -2px -2px 0px rgb(255, 251, 1), 
+               -2px 2px 0px rgb(255, 251, 1),                    
+                2px -2px 0px rgb(255, 251, 1),                  
+                2px 0px 0px rgb(255, 251, 1),
+
+                -6px -4px 0px rgb(0, 0, 0), 
+               -6px 4px 0px rgb(0, 0, 0),                    
+                6px -4px 0px rgb(0, 0, 0),                  
+                6px 4px 0px rgb(0, 0, 0);
+    color: green;
+}
+
+#menu{
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    left: 463px;
+}
+
+input{
+    margin-bottom: 20px;
+}
+
+#botoes{
+    position: absolute;
+    top: 200px;
+    left: 575px;
+    width: 100px;
+    height: 100px
+}
+
+#opcoes{
+    position: absolute;
+    top: 90px;
+    left: 510px;
+    width: 310px;
+    height: 100px
+}
+
+form#dificuldade label{
+    font-size: 13px;
+}
+
+label{
+    color: rgb(194, 0, 0);
+}
+
+label:hover{
+    text-shadow: rgb(165, 102, 102);
+}
+
+#cGreen{
+    color: green;
+}
+
+#cGreen:hover{
+    color: rgb(0, 180, 0);
+    text-shadow: 0 0 4px rgb(71, 165, 79);
+}
+
+#cYellow{
+    color: yellow;
+}
+
+#cYellow:hover{
+    color: rgb(255, 255, 52);
+    text-shadow: 0 0 4px rgb(226, 253, 107);
+}
+
+#cBlue{
+    color: blue;
+}
+
+#cBlue:hover{
+    color: rgb(0, 110, 255);
+    text-shadow: 0 0 4px rgb(109, 107, 252);
+}
+
+#botaoJogar1, #botaoJogar2, #botaoOpcoes{
+    font-family: 'FontePixel';
+    text-align: center;
+    color: white;
+    background-color: black;
+    box-sizing: 10px;
+    border-color: white;
+    cursor: pointer;
+}
+
+#botaoJogar1:hover, #botaoJogar2:hover, #botaoOpcoes:hover{
+    background-color: rgb(61, 61, 61);
+}
+
+#botaoOpcoes{
+    margin-left: -13px;
+    margin-top: 10px;
+}
+
+/*Rodape*/
+#rodape{
+    position: absolute;
+    margin-top: -180px;
+    margin-left: 484px;
+    font-size: 14px;
+}
+
+#linkGit{
+    color: white;
+    text-decoration: none;
+}
