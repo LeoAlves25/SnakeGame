@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="icon" type="image/X-con" href="Imagens/cobra-logo.png">
+    <link rel="stylesheet" href="CSS/principal.css">
+</head>
+<body>
+    <h1 id="titulo">Snake Game</h1>
+
+    <canvas id="menu" width="400" height="400"></canvas>
+
+    <ul id="botoes">
+        
+        <input type="button" id="botaoJogar1" value="PLAY">
+        <input type="button" id="botaoOpcoes" value="OPTIONS">
+        
+    </ul>
+
+        <div id="opcoes">
+            <div id="cor">
+                <h2>Snake color</h2>
+                <input type="radio" name="tCor" id="cVerde" value="Green" checked><label for="cVerde" id="cGreen">Green</label>
+                <input type="radio" name="tCor" id="cAmarelo" value="Yellow"><label for="cAmarelo" id="cYellow">Yellow</label>
+                <input type="radio" name="tCor" id="cAzul" value="Blue"><label for="cAzul" id="cBlue">Blue</label>
+            </div>
+            <div id="arena">
+                <h2>Arena size</h2>
+                <input type="radio" name="tArena" id="cPequeno" value="400" checked><label for="cPequeno">Small</label>
+                <input type="radio" name="tArena" id="cGrande" value="600"><label for="cGrande">Big</label>
+            </div>
+            <div id="dificuldade">
+                <h2>Difficulty</h2>
+                    <input type="radio" name="tDiffi" id="cFacil" value="15"><label for="cFacil">Easy</label>
+                    <input type="radio" name="tDiffi" id="cNormal" value="30" checked><label for="cNormal">Normal</label>
+                    <input type="radio" name="tDiffi" id="cDificil" value="40"><label for="cDificil">Hard</label>
+            </div>
+
+            <input type="button" id="botaoJogar2" value="PLAY">
+        </div>
+
+    <canvas id="map" width="600" height="600"></canvas>
+    
+    <footer id="rodape">
+        Created by: <a id="linkGit" href="https://github.com/LeoAlves25" target="blank">Leonardo Castro</a>
+    </footer>
+</body>
+<script src="JavaScript/jogo.js"></script>
+<script src="JavaScript/opcoes.js"></script>
+</html>
